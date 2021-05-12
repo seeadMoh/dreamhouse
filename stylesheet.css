@@ -1,0 +1,138 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  /* subscription */
+.form {
+    float: right;
+    margin-top: 15px;
+}
+ /* webpage  logo */
+ 
+.image_logo {
+    width: 100%;
+    padding-bottom: 0;
+    
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation links */
+  .navigation a {
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    padding-left: 4px;
+    text-decoration: none;
+   
+  }
+  
+  /* Change color on hover except active one*/
+  .navigation a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+  }
+  /* active webpage */
+  .active{
+      background-color:#1eec52e0;
+     
+  }
+
+  
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* image  */
+  .image {
+    background-color: #aaa;
+    width: auto;
+    float: right;
+  }
+  /* image descriptions */
+  .pa {
+      padding-left: 10px;
+  }
+  /* sections  */
+  .section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  div h2 {
+      font-size: 3vw;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* search button */
+  input[type=text]:focus {
+    width: 100%;
+    border: 2px solid rgb(179, 169, 169);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: white;
+    background-image: url(search_24px.png);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
+  
+/* Footer */
+.footer {
+    padding: 25px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navigation a {
+    float: none;
+    width: 100%;
+  }
+  .image_logo{
+    display: none;
+
+  }
+  .image{
+    width: 100%;
+  }
+}
+
